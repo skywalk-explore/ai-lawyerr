@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-row-1,
+		.bee-row-2,
+		.bee-row-3 {
+			background-repeat: no-repeat
+		}
+
+		body {
+			background-color: #dce1f6;
+			color: #000;
+			font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif
+		}
+
+		a {
+			color: #b5beec
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 390px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
+		.bee-text {
+			overflow-wrap: anywhere
+		}
+
+		@media (max-width:410px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+		}
+
+		.bee-row-1 {
+			background-color: #f6f7fc;
+			background-position: top center
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-3 .bee-row-content {
+			background-repeat: no-repeat;
+			color: #000
+		}
+
+		.bee-row-1 .bee-col-1 {
+			padding-left: 5px;
+			padding-right: 5px;
+			padding-top: 20px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-2 {
+			padding-bottom: 10px;
+			padding-left: 10px;
+			padding-right: 10px
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 {
+			padding: 5px 10px 10px
+		}
+
+		.bee-row-2 {
+			background-color: #232846
+		}
+
+		.bee-row-2 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-right: 20px;
+			padding-top: 5px
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-2 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-3 .bee-col-1,
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			color: #9d9d9d;
+			font-family: inherit;
+			font-size: 15px;
+			text-align: center
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+	</style>
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<div class="bee-page-container">
+ <div class="bee-row bee-row-1">
+  <div class="bee-row-content">
+   <div class="bee-col bee-col-1 bee-col-w12">
+    <div class="bee-block bee-block-1 bee-heading">
+     <h1 style="color:#083d77;direction:ltr;font-family:'Lora', Georgia, serif ;font-size:37px;font-weight:400;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
+      AI Lawyer.
+      <span style="color: #311ccf;">
+       Providing Free Advice To Renters
+      </span>
+     </h1>
+     <br/>
+    </div>
+    <div class="bee-block bee-block-2 bee-text">
+     <div class="bee-text-content" style="font-size: 14px; line-height: 150%; font-family: inherit; color: #083d77;">
+      <p style="line-height: 27px; font-size: 18px;">
+       <span style="font-size: 18px; line-height: 27px;">
+       </span>
+      </p>
+      <p style="font-size: 18px; line-height: 27px;">
+      </p>
+      <p style="font-size: 18px; line-height: 27px;">
+       A WebApp designed to advise renters in the U.K. of their legal rights on housing issues. The App aims to provide advice based on the unique circumstance of a given landlord v renter dispute.
+      </p>
+      <br><br>
+      <h3>Using the App Is Very Simple:</h3><br>
+       <p style="font-size: 18px; line-height: 27px;">
+       1. Subscribe to AI Lawyer blog.
+      <br><br>
+      <iframe src="https://ailawyer.substack.com/embed" width="380" height="120" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+      </p><br>
+       <p style="font-size: 18px; line-height: 27px;">
+       2. Go on the HELP page
+      </p><br>
+       <p style="font-size: 18px; line-height: 27px;">
+       3. Select the area where you need support
+      </p><br>
+       <p style="font-size: 18px; line-height: 27px;">
+       4. Fill out the form and click Advise
+      <p style="line-height: 28px; font-size: 18px;">
+       <span style="font-size: 18px; line-height: 27px;">
+       </span>
+      </p>
+     </div>
+    </div>
+    <div class="bee-block bee-block-3 bee-spacer">
+     <div class="spacer" style="height:40px;">
+     </div>
+    </div>
+    <div class="bee-block bee-block-4 bee-text">
+     <div class="bee-text-content" style="font-size: 14px; line-height: 150%; font-family: 'Lora', Georgia, serif ; color: #536bcf;">
+      <p style="font-size: 14px; line-height: 21px;">
+       <span style="font-size: 16px; line-height: 24px;">
+        <em style="font-size: 21px; line-height: 27px">
+         Disclaimer : AI Lawyer is currently in the prototype stage. The contents of this website is provided for educational purposes only.
+        </em>
+       </span>
+      </p>
+     </div>
+    </div>
+    <div class="bee-block bee-block-5 bee-spacer">
+     <div class="spacer" style="height:60px;">
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="bee-row bee-row-2">
+  <div class="bee-row-content">
+   <div class="bee-col bee-col-1 bee-col-w12">
+    <div class="bee-block bee-block-1 bee-spacer">
+     <div class="spacer" style="height:60px;">
+     </div>
+    </div>
+    <div class="bee-block bee-block-2 bee-social">
+    </div>
+    <div class="bee-block bee-block-3 bee-spacer">
+     <div class="spacer" style="height:60px;">
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="bee-row bee-row-3">
+  <br/>
+  <br/>
+  <div class="bee-row bee-row-4">
+   <div class="bee-row-content">
+    <div class="bee-col bee-col-1 bee-col-w12">
+     <div class="bee-block bee-block-1 bee-spacer">
+      <div class="spacer" style="height:60px;">
+      </div>
+     </div>
+     <div class="bee-block bee-block-2 bee-social">
+     </div>
+     <div class="bee-block bee-block-3 bee-spacer">
+      <div class="spacer" style="height:60px;">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="bee-row-content">
+   <div class="bee-col bee-col-1 bee-col-w12">
+    <div class="bee-block bee-block-1 bee-icons" id="beepro-locked-footer">
+     <div class="bee-icon bee-icon-last">
+      <div class="bee-content">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock %}

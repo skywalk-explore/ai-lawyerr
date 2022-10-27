@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+
+{% block head %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  *, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+
+form {
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 410px) {
+
+  form {
+    max-width: 410px;
+  }
+
+}
+
+</style> <!--- This is the Form CSS styling. Unique to each html.file -->
+{% endblock %}
+
+{% block content %}
+<div class="row">
+<div class="col-md-12">
+<form action="#" method="POST">
+
+  <fieldset>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="User Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="address">Post Code:</label>
+    <input type="text" id="address" name="Post Code" required>
+
+    <br><hr><br>
+
+    <label for="Tenancy Type">Tenancy Type:</label>
+    <select id="Tenancy Type" name="Tenancy Type">
+      <option value="Assured Shorthold Tenancy">Assured Shorthold Tenancy (AST) </option>
+      <option value="Rolling Tenancy">Rolling Tenancy</option>
+    </select>
+    <br>
+
+    <label for="tenancy_date">Tenancy Start Date (Approximate):</label>
+    <input type="date" id="tenancy_date" name="Tenancy Start Date">
+
+    <br>
+
+    <label>Amount Paid in Deposit:</label>
+    <input type="number" id="Deposit Amount" name="Deposit Amount">
+
+    <br>
+
+    <label for="Deposit Protection Notification Given">Landlord Notified Me After Placing Deposit Into Protection Scheme:</label>
+    <select id="Deposit Protection Notification Given" name="Deposit Protection Notification Given">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <br>
+
+     <label for="Deposit Protection Scheme Used">Deposit Was Placed Into A Deposit Protection Scheme:</label>
+     <select id="Deposit Protection Scheme Used" name="Deposit Protection Scheme Used">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="I Don't Know">I Don't Know</option>
+    </select>
+
+    <br>
+
+    <label>Proposed Monthly Rent Increase:</label>
+    <input type="number" id="Rent Increase Amount" name="Rent Increase Amount">
+
+    <br>
+
+    <label for="Last Rent Increase Was">Last Rent Increase:</label>
+    <select id="Last Rent Increase Was" name="Last Rent Increase Was">
+      <option value="Less Than 12 Months Ago">Less Than 12 Months Ago</option>
+      <option value="More Than 12 Months Ago">More Than 12 Months Ago</option>
+    </select>
+
+    <br>
+
+    <label for="Notice Served By">Notice of Rent Increase Served By:</label>
+    <select id="Notice Served By" name="Notice Served By">
+      <option value="Without Using FORM 4 Rent Increase Notice">Without Using FORM 4 Rent Increase Notice</option>
+      <option value="Using FORM 4 Rent Increase Notice">Using FORM 4 Rent Increase Notice</option>
+    </select>
+
+    <br>
+
+    <label for="Rent Increase Notice Period Given">Rent Increase Will Come Into Effect After A Notice Period:</label>
+    <select id="Rent Increase Notice Period Given" name="Rent Increase Notice Period Given">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <br>
+
+    <label for="Property A HMO">The Rental Property Is a Housing of Multiple Occupation <a href="https://www.gov.uk/private-renting/houses-in-multiple-occupation" target="_blank">(HMO)</a></label>
+    <select id="Property A HMO" name="Property A HMO">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <br>
+
+    <label for="HMO Licence Status">The property has a HMO licence:</label>
+    <select id="HMO Licence Status" name="HMO Licence Status">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="I Don't Know">I Don't Know</option>
+    </select>
+
+    <br>
+
+    <label for="bio">Any Other Relevant Information You Want Us to Know:</label>
+    <textarea id="bio" name="Additional Info"></textarea>
+
+   </fieldset>
+
+  <button type="submit">Submit</button>
+
+ </form>
+  </div>
+</div>"""
+{% endblock %}
